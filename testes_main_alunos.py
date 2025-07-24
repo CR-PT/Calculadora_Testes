@@ -67,7 +67,7 @@ class TestCalculadora(unittest.TestCase):
         # Teste división y módulo con números negativos
         for calc in [calculadora, calculadora_v2, calculadora_v3, calculadora_v4]:
             self.assertEqual(calc(-6, 3, '/'), -2.0)
-            self.assertEqual(calc(-7, 3, '%'), -1)  # Nota: Comportamiento de % en Python con negativos
+            self.assertEqual(calc(-7 % 3 → resultado = 2  ✅  (não -1) # Nota: Comportamiento de % en Python con negativos
 
         # Teste exponenciación con números negativos
         for calc in [calculadora, calculadora_v2, calculadora_v3, calculadora_v4]:
@@ -75,7 +75,7 @@ class TestCalculadora(unittest.TestCase):
 
         # Teste exponenciación con base cero
         for calc in [calculadora, calculadora_v2, calculadora_v3, calculadora_v4]:
-            self.assertEqual(calc(0, 3, '^'), 0)
+            self.assertEqual(calc(0, 3, '^'), 0)S
 
 if __name__ == '__main__':
     unittest.main()
