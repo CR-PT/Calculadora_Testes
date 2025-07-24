@@ -76,7 +76,7 @@ class TestCalculadora(unittest.TestCase):
 
         # Teste exponenciación con base cero
         for calc in [calculadora, calculadora_v2, calculadora_v3, calculadora_v4]:
-            self.assertEqual(calc(0, 3, '^'), 0)S
+            self.assertEqual(calc(0, 3, '^'), 0)
 
 if __name__ == '__main__':
     unittest.main()
